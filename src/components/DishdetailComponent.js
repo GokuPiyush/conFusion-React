@@ -5,7 +5,7 @@ function RenderComments({comments}){
     if(comments != null){
         const comment = comments.map((comment) => {
             return (
-                <li>
+                <li key={comment.id}>
                     {comment.comment}<br />--{comment.author}, {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}
                 </li>
             );
