@@ -47,7 +47,7 @@ const Menu = (props) => {
 			</div>
 		);
 	}
-	else{
+	else {
 		return (
 			<div className="container">
 				<div className="row">
